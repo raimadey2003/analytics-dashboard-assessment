@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EV Dashboard</title>
+  <link rel="stylesheet" href="ev.css">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Electric Vehicle Population Dashboard</h1>
+
+    <div class="chart-section">
+      <canvas id="makeChart"></canvas>
+    </div>
+
+    <div class="chart-section">
+      <canvas id="fuelChart"></canvas>
+    </div>
+
+    <div class="table-section">
+      <h2>Sample EV Data</h2>
+      <table id="evTable">
+        <thead>
+          <tr>
+            <th>VIN</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Electric Range</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data rows will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="ev.js"></script>
+</body>
+</html>
